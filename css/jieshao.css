@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	position: relative;
+	width: 100vw;
+	height:100vh;
+    overflow: hidden;
+	min-width: 900px;
+}
+.xcb_jieshao_box_1{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.1);
+	
+}
+.xcb_font{
+	width:20%;
+	height: 40%;
+	
+    position: absolute;
+	top:20%;
+	display: flex;
+	padding: 3%;
+}
+.font_shi{
+	position: relative;
+	font-size: 12em;
+}
+.font_pu{
+	position: relative;
+	top:12%;
+	font-size: 8em;
+}
+.font_en{
+	font-size: 3em;
+	position: absolute;
+	top:200px;
+	left:50px;
+	
+}
+.font_ch{
+	position: absolute;
+	top:250px;
+	font-size: 17px;
+	width:100%;
+}
+
+.xcb_map_box{
+	 
+	width: 80%;
+	height: 90%;
+
+
+}
+.xcb_map{
+	width: 100%;
+	height: 100%;
+	
+	
+}
+.xcb_banbianshan{
+	
+	position: absolute;
+	
+	z-index: 10;
+	left: 75%;
+	top:10%;
+}
+.xcb_map_font{
+	width: 100px;
+	height: 10px;
+	position: relative;
+	font-size: 15px;
+	color:rgba(0,0,0,0.5);
+	left:10px;
+	top:-15px
+}
+.xcb_map_font_en{
+	width: 200px;
+	height: 10px;
+	position: relative;
+	font-size: 15px;
+	color:rgba(0,0,0,0.5);
+	margin-left:-25px;
+	margin-top:10px;
+}
+.xcb_map_avatar{
+	
+	cursor:pointer;
+	width: 45px;
+	height: 45px;
+	border-radius: 22.5px;
+	background: rgba(0,0,0,0.5);
+	position: relative;
+	left:13%;
+	top:12%;
+	
+}
+.xcb_map_avatar:hover{
+	background: rgba(49,112,36,0.5);
+}
+.xcb_qipao{
+
+	width: 59px;
+	height: 64px;
+	background:url(../image/白泡泡.png);
+	position: relative;
+	left: -1%;
+	transition: opacity 1s;
+}
+.xcb_zhongguoyucun{
+	position: absolute;
+	
+	z-index: 10;
+	left: 60%;
+	top:30%;
+}
+.xcb_yuganggucheng{
+	position: absolute;
+	
+	z-index: 10;
+	left: 55%;
+	top:50%;
+}
+.xcb_shipuyugang{
+	position: absolute;
+
+	z-index: 10;
+	left: 50%;
+	top:65%;
+}
+.xcb_dongmendao{
+	position: absolute;
+height: 10px;
+	z-index: 10;
+	left: 62%;
+	top:60%;
+}
+.xcb_yushandao{
+	position: absolute;
+	
+	z-index: 10;
+	left: 64%;
+	top:75%;
+}
+.xcb_tantoushandao{
+	position: absolute;
+	height: 10px;
+	z-index: 10;
+	left: 60%;
+	top:78%;
+}
+.xcb_dot_1{
+	list-style: none;
+	cursor: pointer;
+	position: relative;
+	opacity: 0.5;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #000;
+	color: #fff;
+	margin: 0px 12.5px;
+	z-index: 10;
+}
+.xcb_changeColor{
+	width: 50px;
+	height: 50px;
+	cursor:pointer;
+	background:rgba(0,0,0,0.2);
+	position: fixed;
+	top:90%;
+	right:0px;	
+}
+.xcb_qipao:hover{
+	z-index: 15;
+}
+
+			  .czh_zgyc_point{
+				  position: relative;
+				  width: 240px;
+				  height: 10px;
+				 
+			  }
+			  .czh_word_left{
+				  opacity: 0;
+				  height: 10px;
+				  font-size: 14px;
+				  line-height: 10px;
+				  position: absolute;
+				  left: -50px;
+				  top:25px;
+				  width: 200px;
+				  transition: all 1s;
+				  font-family:arizonia;
+			  }
+			  .czh_word_right{
+				  height: 60px;
+				  position: absolute;
+				  font-size: 14px;
+				  opacity: 0.7;
+				  transform: scale(1,1);
+				  left: 156px;
+				  text-shadow: 0px 0px 10px rgba(255,255,255,1);
+				  line-height: 60px;
+				  transition: all 1s;
+			  }
+			  .czh_point{
+				  position: absolute;
+				  top: 35.5%;
+				  left: 130px;
+			  	  width: 13px;
+				  height: 13px;
+				  transform: scale(1,1);
+				  border-radius: 25px;
+				  border: 2px rgba(0,0,0,0.500) solid;
+				  overflow: hidden;
+				  box-shadow: 0px 0px 50px #fff;
+				  transition: all 1s;
+			  }
+			.czh_point img{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				left: 0px;
+			}
+.xcb_bigbox{
+    
+	min-width: 600px;
+	max-width: 1080px;
+	position: absolute;
+	right:13%;
+    width: 100%;
+	height: 100%;
+		margin:8% 0%;
+}
+.xcb_big_fontbox{
+	width: 50%;
+	height: 300px;
+	min-width: 900px;
+	max-width: 1080px;
+	position: absolute;
+	top:10%;
+	left:10%;
+
+}

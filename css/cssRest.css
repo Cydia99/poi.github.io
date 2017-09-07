@@ -1,0 +1,122 @@
+
+/*YMT----我的重置样式开始*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus {
+	outline: 0;
+}
+body{
+	
+	line-height:1.4;
+	color:#333;
+	font-family:arial;
+	font-size:62.5%;         /*这里之后的rem单位的字体都是百分之十的计算单位哦！*/
+}
+input,textarea,select{
+	font-size:100%;
+	font-family:inherit;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form{
+	margin:0;
+}
+h4,h5,h6{
+	font-size:1em;
+}
+ul,ol{
+	padding-left:0;
+	list-style:none;
+}
+a img{
+	border:0;
+}
+img{
+    border:0;
+}
+/*字体*/
+.n{
+	font-weight:normal;
+}
+.b{
+	font-weight:bold;	
+}
+.i{
+	font-style:italic;
+}
+/*字体*/
+.cl{
+	clear:both;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+
+/*flex布局应用---慎用 一般在使用过程中是有父级的宽度值的，适用于扁平化风格的网站布局会比较好，查找漏洞的时候要知道设为flex属性之后子元素的float clear和vertical-align会失效*/ 
+.center{
+	display:flex;  
+	display: -webkit-flex; /* Safari */
+	justify-content:space-between;     /*三-两个块状元素居中处理两边会在父级的两端中间的会垂直居中*/
+}
+.in-center{
+	display:inline-flex;
+	display:-webkit-inline-flex;
+	justify-content:space-between;      /*justify-content: /flex-start /flex-end /center /space-between /space-around*/
+}
+.bl-center{
+	display:flex;
+	justify-content:center;
+	align-items:center;            /*块级元素的垂直居中效果*/
+}
+/*输入框的布局
+       <span>我输入框最前面的那个小图标</span>
+       <input/><button></button>
+	   div{display:flex;}  input{flex:1;}
+*/
+/*fex布局应用---慎用*/
+
+
+.box{
+	box-sizing:border-box;       /*盒子模型更好计算，设置padding或者是border值都不会影响盒子的模型大小*/
+}
+.vertical{
+	vertical-align:middle;       /*这个属性可以直接设置图片/按钮/复选框的垂直垂直居中
+	                                  如果是其他元素需要设置为display:inline-block*/
+}
+.test{
+	vertical-align:-2px;         /*用于修复单选框、复选框与12px的文字大小不对齐的问题*/    
+}
+
+
+
+/*设置ul前面的各个小图标或是一样的属性方法
+p:before{content:""}{content:url()}
+*/
+
+
+
+
+
+
+
+
+/*我的重置样式结束*/
