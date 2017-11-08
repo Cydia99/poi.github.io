@@ -1,140 +1,227 @@
-﻿<!doctype html>
-<html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>游戏中心</title>
-
-	<link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>poi~</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
     
-    <script src="js/jquery.min.js"></script>
-</head>
-<body>
-	<div class="overflow">
-	  <div class="panels">
-	    <article class="panels__side panels__side--left">
-	      <div class="panels__side panels__side--inner-left">
-	      <div class="game_1_jieshao">
-	      	
-	      	<div class="game_1_content"><div class="game_1_title">游戏介绍: <table><ul>
-	      		<li>红色果实：暂时性增加血量</li>
-	      		<li>绿色果实：暂时性增加移速</li>
-	      		<li>紫色果实：吃下去+1子弹数</li>
-	      		<li>蓝色果实：双倍经验效果</li>
-	      		<li>黄色果实：基础果实，无任何效果</li>
-	      		<li>玩法：保护小鱼并且不让小鱼饿死，撑到时间结束方为获胜</li>
-	      		
-	      	</ul></table></div><ul>
-	      		<li class="li_1 lunbo_1"><img src="image/jieshao1.png" class="jieshao1"></li>
-	      		<li class="li_2 lunbo_1"><img src="image/jieshao2.png" class="jieshao1"></li>
-	      		<li class="li_3 lunbo_1"><img src="image/jieshao3.png" class="jieshao1"></li>
-	      	</ul></div>
-	      	<div class="game_1_neirong"></div>
-	      </div>
-	     <div class="game_1_play">LET'S PLAY</div>
-	      </div>
-	      <div class="panels__side panels__side--inner">
-	      	<header class="htmleaf-header">
-				<h1 class="panels__headline panels_left ">保护小鱼</h1>
-				
-			</header>
-	        <!-- <h1 class="panels__headline">Noam Chomsky</h1>   -->    
-	        <div class="xcb_game_next">
-	        	
-	        
-	        <svg class="arrow arrow--left" width="40" height="40" viewBox="0 0 24 24"><path d="M0 0h24v24h-24z" fill="#fff"/><path d="M20 11h-12.17l5.59-5.59-1.42-1.41-8 8 8 8 1.41-1.41-5.58-5.59h12.17v-2z"/></svg>
-	        </div>
-	        <div class="xcb_game_1_2"><img src="image/jiantou_3.png" class="jiantouL"><div class="xcb_game_1_2_text">已挑战关卡：</div><div class="xcb_game_1_2_text_1">1-1</div><img src="image/jiantou_3.png" class="jiantouR">
-	      </div> </div>
-	    </article>
-	    <article class="panels__side panels__side--right">
-	      <div class="panels__side panels__side--inner">
-	        <h1 class="panels__headline panels_right">大鱼吃小鱼</h1>
-	        <div class="xcb_game_next">
-	        	    <svg class="arrow arrow--right" width="40" height="40" viewBox="0 0 24 24"   ><path  d="M0 0h24v24h-24z" fill="#fff"   /><path   d="M12 4l-1.41 1.41 5.58 5.59h-12.17v2h12.17l-5.58 5.59 1.41 1.41 8-8z"/></svg>
-	        </div>
-	    
-	      </div>
-	      <div class="panels__side panels__side--inner-right">
-        <ul class="game2_lunbo">
-	      		<li class="li_1 lunbo_1"><img src="image/jieshao1.png" class="jieshao1"></li>
-	      		<li class="li_2 lunbo_1"><img src="image/jieshao2.png" class="jieshao1"></li>
-	      		<li class="li_3 lunbo_1"><img src="image/jieshao3.png" class="jieshao1"></li>
-	      	</ul>
-	        <div class="game2_content">
-	        <div class="phb_title">排行榜：</div>	
-	        <table class="game2_phb">
-	        	<dt><dd><img src="image/nico.jpeg" class="user_head" ></dd><dd>第一名:</dd><dd>矢泽妮可</dd><dd>分数</dd><dd>10000</dd></dt>
-	        	<dt><dd><img src="image/nico.jpeg"  class="user_head" ></dd><dd>第二名:</dd><dd>高板惠乃果</dd><dd>分数</dd><dd>9999</dd></dt>
-	        	<dt><dd><img src="image/nico.jpeg"  class="user_head" ></dd><dd>第一名:</dd><dd>东条希</dd><dd>分数</dd><dd>10000</dd></dt>
-	        	<dt><dd><img src="image/nico.jpeg"   class="user_head"></dd><dd>第二名:</dd><dd>小泉花阳</dd><dd>分数</dd><dd>9999</dd></dt>
-	        	<dt><dd><img src="image/nico.jpeg"  class="user_head" ></dd><dd>第一名:</dd><dd>西木野真姬</dd><dd>分数</dd><dd>10000</dd></dt>
-	        </table>
-	        <div class="game2_play">OL对战</div>
-	        </div>
-	       <canvas class="canvas_next">唔。。。</canvas>
-	     
-	       <div class="loading"></div>
-	      </div>
-	    </article>
-	  </div>
-	   <div class="all_bg">
-			<div id="allcanvas">
-				<canvas id="canvas1" >
+        <div class="responsive-header visible-xs visible-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-section">
+                            <div class="profile-image">
+                                <img src="img/avata.png" alt="Volton" >
+                            </div>
+                            <div class="profile-content">
+                                <h3 class="profile-title">xuchengbo</h3>
+                                <p class="profile-description">成功？做梦吧。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                <div class="main-navigation responsive-menu">
+                    <ul class="navigation">
+                        <input type="text" id="username">
+                        <input type="text" id="password">
+                        <button>登陆</button>
+                        <li><a href="#"><i class="fa fa-home"></i>简介</a></li>
+                        <li><a href="#"><i class="fa fa-user"></i>学习</a></li>
+                        <li><a href="#"><i class="fa fa-newspaper-o"></i>生活</a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i>更多</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+        <!-- SIDEBAR -->
+        <div class="sidebar-menu hidden-xs hidden-sm">
+            <div class="top-section">
+                <div class="profile-image">
+                    <img src="img/avata.png" alt="Volton">
+                </div>
+                <h3 class="profile-title">xuchengbo</h3>
+                <p class="profile-description">想成功？做梦吧。</p>
+            </div> <!-- top-section -->
+            <div class="main-navigation">
+                    <input type="text" id="username" class="input" placeholder="admin">
+                    <input type="text" id="password" class="input" placeholder="admin">
+                    <div class="loginButton">登陆</div>
+                <ul class="navigation">
+                    <li><a href="#"><i class="fa fa-home"></i>简介</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i>学习</a></li>
+                    <li><a href="#"><i class="fa fa-newspaper-o"></i>生活</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>更多</a></li>
+                </ul>
+            </div> <!-- .main-navigation -->
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div> <!-- .social-icons -->
+        </div> <!-- .sidebar-menu -->
+        
+		
+        	
+        <div class="banner-bg" id="top">
+            <div class="banner-overlay">
+            <ul class="lunbo_big" style="display: flex;width: 500%;position:absolute;left: 0px;height: 100%;transition: left 2s">
+            	<img src="img/29.jpg" alt="bg" width="20%" height="auto" class="img_lunbo">
+            	<img src="img/29.jpg" alt="bg" width="20%" height="auto" class="img_lunbo">
+            	<img src="img/29.jpg" alt="bg" width="20%" height="auto" class="img_lunbo">
+            	<img src="img/29.jpg" alt="bg" width="20%" height="auto" class="img_lunbo">
+            	<img src="img/29.jpg" alt="bg" width="20%" height="auto" class="img_lunbo">
+            </ul>
+            	
+            </div>
+            <div class="welcome-text">
+                <h2>欢迎~~~~poi</h2>
+                <h5>&larr;左边的那两个框框只是框框而已。。。</h5>
+            </div>
+        </div>
 
-				</canvas>
-				<canvas id="canvas2" >
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
 
-				</canvas>
-                <canvas id="canvas3" >
+                <div class="content-wrapper">
+                
+                    <!-- ABOUT -->
+                    <div class="page-section" id="about">
+                    <div class="row">
+                        <div class="col-md-12" >
+                            <h4 class="widget-title">关于这个网站</h4>
+                            <div class="about-image">
+                           
+                            </div>
+                            <p>我会在这里分享很多关于前端，后台的知识，还有电子技术等等老掉牙或者新的出奇的技术，虽然百度或者GOOGLE上教程很多，但还是想学好还是得自成体系才行，大家可以借鉴，如有不足，除非是你黑了我的网站，要不然我是不会跟你说话的。</p>
+                            <hr>
+                        </div>
+                    </div> <!-- #about -->
+                    </div>
+                    
+                    <!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">我会的技术：</h4>
+                            <p>基本上只是娱乐级别，如果有bug的话请先把我的网站给黑了，然后再改我的数据库吧</p>
+                        </div>
+                    </div>
+                    <div class="row projects-holder">
+                        <div class="col-md-4 col-sm-6 img_effect" >
+                            <div class="project-item">
+                                <img src="img/1.jpg" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="#">前端</a></h5>
+                                        <p>万恶源于前端！！！</p>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 img_effect">
+                            <div class="project-item">
+                        
+                                <img src="img/2.jpg" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="#">后台</a></h5>
+                                        <p>谁家里没有一个后台呢？</p>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 img_effect">
+                            <div class="project-item">
+                                <img src="img/3.jpg" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="#">美工</a></h5>
+                                        <p>美工就是“艺术”，艺术源于“哲学”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 img_effect">
+                            <div class="project-item">
+                                <img src="img/4.jpg" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="#">电子技术</a></h5>
+                                        <p>本人专业就是电子信息工程，电子真的很好玩</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 img_effect">
+                            <div class="project-item">
+                                <img src="img/5.jpg" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="#">游戏攻略</a></h5>
+                                        <p>游戏菜是有原因的</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 img_effect">
+                            <div class="project-item">
+                                <img src="img/6.jpg" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="#">更多</a></h5>
+                                        <p>为什么会有“更多”？因为我想不粗来应该给他取什么名字</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- .projects-holder -->
+                    </div>
+                    
 
-				</canvas>
-			</div>
-			<div class="xcb_game_1_bottom">
-					 <div class="xcb_score">得分：100</div>
- <div class="xcb_time">TIME:00：00</div>
- <div class="xcb_guanqia">关卡：1-1</div>
- <div class="zidan_name">子弹数目：</div>
- <div class="xcb_zidan"><div class="xcb_zidan_s"></div><div class="xcb_zidan_s"></div><div class="xcb_zidan_s"></div><div class="xcb_zidan_s"></div><div class="xcb_zidan_s"></div></div>
-			</div>
-			<img src="src/pause.png" class="game1_pause">
-			<img src="src/play.png" class="game1_play">
-			<div class="xcb_loop">重新开始</div>
-			<div class="game_back">返回</div>
-		</div>
-	</div>
-	  <div class="wrapper">
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="loading_text">正在加载，请稍后...</div>
-</div>
+                
+                    <hr>
 
-</body>
-<script type="text/javascript" src="js/main.js"></script>
- 	        <script src="js/game.js"></script>
-  	        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/commonFunctions.js"></script>
-        <script type="text/javascript" src="js/background.js"></script>
-        <script type="text/javascript" src="js/ane.js"></script>
-        <script type="text/javascript" src="js/fruit.js"></script>
-        <script type="text/javascript" src="js/mom.js"></script>
-        <script type="text/javascript" src="js/collision.js"></script>
-        <script type="text/javascript" src="js/baby.js"></script>
-        <script type="text/javascript" src="js/data.js"></script>
-        <script type="text/javascript" src="js/wave.js"></script>
-        <script type="text/javascript" src="js/halo.js"></script>
-        <script type="text/javascript" src="js/dust.js"></script>
-        <script type="text/javascript" src="js/cover.js"></script>
-        <script type="text/javascript" src="js/luren.js"></script>
+                    <div class="row" id="footer">
+                        <div class="col-md-12 text-center">
+                            <p class="copyright-text">Copyright &copy; 2017 xuchengbo Design </p>
+                        </div>
+                    </div>
 
+                </div>
 
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+		<script src="js/libs.min.js"></script>
+   		<script src="js/index.js"></script>
+    </body>
 </html>
